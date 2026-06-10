@@ -1,0 +1,16 @@
+# dependencies
+node_modules/
+
+# environment variables (secrets)
+.env
+.env.local
+.env.*.local
+.env.production
+
+# build output
+dist/
+dist-ssr/
+
+# logs
+*.log
+npm-debug.log*

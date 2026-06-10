@@ -1,0 +1,16 @@
+{
+  "name": "classportal-workspace",
+  "version": "1.0.0",
+  "description": "Root workspace for ClassPortal - Classroom Portal system",
+  "scripts": {
+    "install:server": "cd server && npm install",
+    "install:client": "cd client && npm install --legacy-peer-deps",
+    "install:all": "npm run install:server && npm run install:client",
+    "dev:server": "cd server && npm run dev",
+    "dev:client": "cd client && npm run dev",
+    "dev": "npx concurrently \"npm run dev:server\" \"npm run dev:client\""
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

@@ -1,0 +1,6 @@
+Introduction to Linear Algebra and Vector Spaces.
+Author: Seed Teacher
+Date: 2026-06-10
+
+Vectors are objects that can be added together and multiplied by scalars.
+We define vector space V over field F as a set closed under vector addition and scalar multiplication.
