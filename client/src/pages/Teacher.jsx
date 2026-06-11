@@ -89,7 +89,11 @@ export default function Teacher() {
       const xhr = new XMLHttpRequest();
       const token = jwt;
       
-      const baseUrl = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
+      let rawUrl = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
+      if (rawUrl && !rawUrl.endsWith('/api') && !rawUrl.endsWith('/api/')) {
+        rawUrl = rawUrl.replace(/\/$/, '') + '/api';
+      }
+      const baseUrl = rawUrl;
       xhr.open('POST', `${baseUrl}/upload`);
       
       if (token) {
